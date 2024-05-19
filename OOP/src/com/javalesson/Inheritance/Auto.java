@@ -3,7 +3,7 @@ package com.javalesson.Inheritance;
 public class Auto {
     private String producer = "Mercedes";
     private String model = "A180";
-    private EngineType engineType;
+    private Engine engine;
     private int currentSpeed;
     protected boolean isRunning;
 
@@ -19,10 +19,10 @@ public class Auto {
         System.out.println("Auto has stopped");
     }
 
-    public Auto(String producer, String model, EngineType engineType) {
+    public Auto(String producer, String model, Engine engine) {
         this.producer = producer;
         this.model = model;
-        this.engineType = engineType;
+        this.engine = engine;
         System.out.println("Auto was initialized");
     }
 
@@ -39,8 +39,8 @@ public class Auto {
         return model;
     }
 
-    public EngineType getEngineType() {
-        return engineType;
+    public Engine getEngineType() {
+        return engine;
     }
 
     public int getCurrentSpeed() {
@@ -49,5 +49,9 @@ public class Auto {
 
     public boolean isRunning() {
         return isRunning;
+    }
+
+    public Engine getEngine() {
+        return engine;
     }
 }
