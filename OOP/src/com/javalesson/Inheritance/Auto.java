@@ -10,7 +10,7 @@ public class Auto {
     public void start() {
         isRunning = true;
         currentSpeed = 10;
-        System.out.println("Auto is start");
+        System.out.println("Auto is starting");
     }
 
     public void stop() {
@@ -53,5 +53,9 @@ public class Auto {
 
     public Engine getEngine() {
         return engine;
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
     }
 }
