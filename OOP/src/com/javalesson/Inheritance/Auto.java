@@ -5,7 +5,7 @@ public class Auto {
     private String model = "A180";
     private EngineType engineType;
     private int currentSpeed;
-    private boolean isRunning;
+    protected boolean isRunning;
 
     public void start() {
         isRunning = true;

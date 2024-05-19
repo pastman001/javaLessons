@@ -1,10 +1,10 @@
 package com.javalesson.Inheritance;
 
-public class FutelAuto extends Auto{
+public class FuelAuto extends Auto{
     private int availablePetrol;
     private int tankVolume;
 
-    public FutelAuto(String producer, String model, EngineType engineType, int availablePetrol, int tankVolume) {
+    public FuelAuto(String producer, String model, EngineType engineType, int availablePetrol, int tankVolume) {
         super(producer, model, engineType);
         this.availablePetrol = availablePetrol;
         this.tankVolume = tankVolume;
