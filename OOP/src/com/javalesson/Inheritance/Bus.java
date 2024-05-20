@@ -30,6 +30,11 @@ public class Bus extends FuelAuto{
     }
 
     @Override
+    public void energize() {
+        fuelUp(getTankVolume()-getAvailablePetrol());
+    }
+
+    @Override
     public void fuelUp(int petrolVolume) {
         int volume = getAvailablePetrol() +petrolVolume;
         if(volume>getTankVolume()){

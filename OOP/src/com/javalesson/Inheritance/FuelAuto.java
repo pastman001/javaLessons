@@ -30,4 +30,9 @@ public class FuelAuto extends Auto{
     public void setTankVolume(int tankVolume) {
         this.tankVolume = tankVolume;
     }
+
+    @Override
+    public void energize() {
+
+    }
 }

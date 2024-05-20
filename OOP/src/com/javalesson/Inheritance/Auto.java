@@ -1,6 +1,6 @@
 package com.javalesson.Inheritance;
 
-public class Auto {
+public abstract class Auto {
     private String producer = "Mercedes";
     private String model = "A180";
     private Engine engine;
@@ -58,4 +58,5 @@ public class Auto {
     public void setCurrentSpeed(int currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
+    public abstract void energize();
 }
